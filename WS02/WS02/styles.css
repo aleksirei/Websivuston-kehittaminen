@@ -1,0 +1,63 @@
+    h1 {
+      color: rgb(46, 66, 46);
+    }
+    p {
+      color: rgb(97, 30, 151);
+    }
+    
+    body {
+      background-color: lightgray;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    .content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #cc9b9b;
+  border: 1px solid #000000;
+}
+table {
+      width: 10%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #fffcfc;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #a0459b;
+    }
