@@ -1,0 +1,111 @@
+    h1 {
+      color: rgb(46, 66, 46);
+    }
+    p {
+      color: rgb(97, 30, 151);
+    }
+    
+    body {
+      background-color: lightgray;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    .content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #cc9b9b;
+  border: 1px solid #000000;
+}
+table {
+      width: 10%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #fffcfc;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #a0459b;
+    }
+    .transition-button {
+        background-color: rgb(165, 53, 45);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(137, 240, 128);
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(28, 40, 201);
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
