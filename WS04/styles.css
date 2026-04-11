@@ -1,63 +1,108 @@
-@keyframes slideInDown {
-    from {
-        transform: translateY(-40px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.animated-banner {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-    font-family: Garamond, serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 14px 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    animation: slideInDown 0.8s ease-out forwards;
-}
+
 body {
-    background-color: #1980e7;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 24px;
-    font-family: Georgia, serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
 }
+
+header {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0ea5e9;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-.grid-item {
-  background-color: rgb(240, 6, 6);
-  padding: 20px;
-  text-align: center;
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+}
+
 .flex-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
+
 .box {
-  background-color: rgb(190, 194, 191);
-  padding: 20px;
-  text-align: center;
+  background: #38bdf8;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
 }
+
+.box:hover {
+  transform: scale(1.1);
+}
+
 .responsive-box {
-  padding: 20px;
-  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: bold;
 }
+
 @media (max-width: 600px) {
   .responsive-box {
-    background-color: rgb(190, 78, 153);
+    background: #f87171;
   }
 }
+
 @media (min-width: 601px) {
   .responsive-box {
-    background-color: rgb(129, 165, 29);
+    background: #34d399;
   }
+}
+
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1e293b;
 }
