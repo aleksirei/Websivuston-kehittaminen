@@ -1,3 +1,32 @@
+@keyframes slideInDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.animated-banner {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: Garamond, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: slideInDown 0.8s ease-out forwards;
+}
+body {
+    background-color: #1980e7;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 24px;
+    font-family: Georgia, serif;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

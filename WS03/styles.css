@@ -1,4 +1,47 @@
-    h1 {
+body {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;       
+  height: 75vh;
+  margin: 0;
+}
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+.animated-banner {
+  border: 2px solid black;      
+  padding: 10px;
+  display: inline-block;
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+.transition-button {
+        background-color: rgb(122, 79, 62);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(19, 5, 5);
+      }
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+h1 {
       color: rgb(46, 66, 46);
     }
     p {
@@ -18,6 +61,29 @@
   background-color: #cc9b9b;
   border: 1px solid #000000;
 }
+.pseudo-list li:nth-child(odd) {
+        background-color: rgb(236, 7, 7);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(167, 44, 130);
+      }
+.animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
 table {
       width: 10%;
       border-collapse: collapse;
@@ -61,41 +127,7 @@ table {
     input[type="submit"]:hover {
       background-color: #a0459b;
     }
-    .transition-button {
-        background-color: rgb(165, 53, 45);
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      
-      .transition-button:hover {
-        background-color: rgb(137, 240, 128);
-      }
-      .animation-box {
-        width: 50px;
-        height: 50px;
-        background-color: rgb(28, 40, 201);
-        position: relative;
-        animation: move 2s infinite alternate;
-      }
-      @keyframes move {
-        from {
-          left: 0;
-        }
-        to {
-          left: 100px;
-        }
-      }
-      .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
-      .quote {
+    .quote {
         position: relative;
         padding-left: 20px;
         font-style: italic;
@@ -107,5 +139,5 @@ table {
         position: absolute;
         left: 0;
         top: 0;
-        color: lightgray;
+        color: rgb(41, 163, 82);
       }
