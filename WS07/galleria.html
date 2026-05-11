@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>🦔 Siilien omat sivut 🦔</h1>
+
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="siilit.html">Siilit</a></li>
+            <li><a href="galleria.html">Galleria & Lomake</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h2>Kuvagalleria</h2>
+</section>
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img src="kuvat/mofmof3.JPG" alt="Möfmöf">
+        <p>Möfmöf</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="kuvat/mofmof1.JPG" alt="Möfmöf">
+        <p>Möfmöf</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="kuvat/mofmof2.jpg" alt="Möfmöf">
+        <p>Möfmöf</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="kuvat/nerppa3.jpg" alt="Neropatti">
+        <p>Neropatti</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="kuvat/nerppa1.jpg" alt="Neropatti">
+        <p>Neropatti</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="kuvat/nerppa2.jpg" alt="Neropatti">
+        <p>Neropatti</p>
+    </div>
+
+</div>
+
+<section class="form-section">
+
+    <h2>Kumpi on sinusta hauskempi siili?</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nimesi" required>
+
+        <input type="email" placeholder="Sähköposti" required>
+
+        <select required>
+            <option value="">Valitse siili</option>
+            <option>Möfmöf</option>
+            <option>Neropatti</option>
+        </select>
+
+        <textarea placeholder="Miksi juuri tämä siili?" required></textarea>
+
+        <button type="submit">Lähetä</button>
+
+    </form>
+
+</section>
+
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
